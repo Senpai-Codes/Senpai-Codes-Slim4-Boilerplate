@@ -98,4 +98,5 @@ $settings['config'] = [
     // use 'null' for the null adapter
     'baseURL' => 'http://localhost:8888/',
 ];
+
 return $settings;
