@@ -38,7 +38,8 @@ $ git clone https://github.com/Senpai-Codes/Senpai-Codes-Slim4-Boilerplate.git
 $ cd Senpai-Codes-Slim4-Boilerplate
 $ npm install 
 $ composer install
-$ npm run build
+$ npm run webpack
+$ cp config/settings-example.php config/settings.php 
 $ cd public
 $ php -S localhost:8888
 Open Web Browser at http://localhost:8888/
