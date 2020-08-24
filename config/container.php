@@ -76,7 +76,7 @@ return [
         $basePath = $settings['config']['baseURL'];
         $twig->addExtension(new \Fullpipe\TwigWebpackExtension\WebpackExtension(
             // must be a absolute path
-            '/var/www/senpai-clock-server/public/assets/manifest.json',
+            $settings['root'] . '/public/assets/manifest.json',
             // url path for js
             $basePath . 'assets/',
             // url path for css
