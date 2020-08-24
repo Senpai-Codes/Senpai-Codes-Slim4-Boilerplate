@@ -84,7 +84,16 @@ $settings['smtp'] = [
     'password' => '----',
 ];
 
-// E-Mail settings
+// Logger settings
+$settings['logger'] = [
+    'name' => 'app',
+    'path' => __DIR__ . '/../logs',
+    'filename' => 'app.log',
+    'level' => \Monolog\Logger::DEBUG,
+    'file_permission' => 0775,
+];
+
+// Generale settings
 $settings['config'] = [
     // use 'null' for the null adapter
     'baseURL' => 'http://localhost:8888/',

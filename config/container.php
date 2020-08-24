@@ -1,7 +1,10 @@
 <?php
 
+
+use App\Factory\LoggerFactory;
 use Cake\Database\Connection;
 use Psr\Container\ContainerInterface;
+use Psr\Http\Message\ResponseFactoryInterface;
 use Slim\App;
 use Slim\Factory\AppFactory;
 use Slim\Middleware\ErrorMiddleware;
@@ -38,6 +41,11 @@ return [
     BasePathMiddleware::class => function (ContainerInterface $container) {
         return new BasePathMiddleware($container->get(App::class));
     },
+
+    LoggerFactory::class => function (ContainerInterface $container) {
+        return new LoggerFactory($container->get('settings')['logger']);
+    },
+
     // Database connection
     Connection::class => function (ContainerInterface $container) {
             return new Connection($container->get('settings')['db']);
@@ -96,5 +104,9 @@ return [
         );
 
         return new Mailer(Transport::fromDsn($dsn));
+    },
+
+    ResponseFactoryInterface::class => function (ContainerInterface $container) {
+        return $container->get(App::class)->getResponseFactory();
     },
 ];

@@ -3,6 +3,7 @@ package-lock.json
 composer.lock
 vendor/
 .idea/
+logs/
 node_modules/
 errors/
 tmp/
