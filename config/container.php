@@ -21,11 +21,13 @@ return [
     'settings' => function () {
         return require __DIR__ . '/settings.php';
     },
+    
     App::class => function (ContainerInterface $container) {
         AppFactory::setContainer($container);
 
         return AppFactory::create();
     },
+
     ErrorMiddleware::class => function (ContainerInterface $container) {
         $app = $container->get(App::class);
         $settings = $container->get('settings')['error'];
@@ -38,10 +40,12 @@ return [
             (bool)$settings['log_error_details']
         );
     },
+
     BasePathMiddleware::class => function (ContainerInterface $container) {
         return new BasePathMiddleware($container->get(App::class));
     },
 
+    //Error and exception handling
     LoggerFactory::class => function (ContainerInterface $container) {
         return new LoggerFactory($container->get('settings')['logger']);
     },

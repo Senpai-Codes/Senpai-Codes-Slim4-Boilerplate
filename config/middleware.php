@@ -4,9 +4,10 @@ use Selective\BasePath\BasePathMiddleware;
 use Slim\App;
 use App\Middleware\HttpExceptionMiddleware;
 use App\Middleware\ErrorHandlerMiddleware;
-
 use Slim\Middleware\ErrorMiddleware;
 use Slim\Views\TwigMiddleware;
+
+
 return function (App $app) {
     // Parse json, form data and xml
     $app->addBodyParsingMiddleware();

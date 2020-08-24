@@ -7,5 +7,4 @@ return function (App $app) {
 
     $app->get('/template', \App\Action\HomeActionTWIG::class);
 
-
 };

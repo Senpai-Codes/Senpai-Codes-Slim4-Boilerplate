@@ -1,6 +1,0 @@
-vendor/
-.idea/
-node_modules/
-errors/
-tmp/
-config/settings.php
