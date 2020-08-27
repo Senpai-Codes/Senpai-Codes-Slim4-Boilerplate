@@ -48,5 +48,10 @@ return function (App $app) {
     $app->get('/update', \App\Action\UserUpEmailAction::class);
     $app->get('/delete/{id}', \App\Action\UserDeleteAction::class);
     $app->get('/Dashboard/{name}', \App\Action\DashboardAction::class);
+<<<<<<< HEAD
+>>>>>>> origin/olfa
+=======
+    $app->get('/Register', \App\Action\RegisterAction::class);
+    $app->post('/Register', \App\Action\RegisterPostAction::class);
 >>>>>>> origin/olfa
 };
