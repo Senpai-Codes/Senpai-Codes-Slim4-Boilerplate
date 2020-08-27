@@ -11,8 +11,7 @@ final class HomeAction
         ServerRequestInterface $request, 
         ResponseInterface $response
     ): ResponseInterface {
-        $array = [];
-        $test = $array['nada'];
+
 
         $result = [
             'success' => ['message' => 'Validation success' ],

@@ -6,6 +6,7 @@ return function (App $app) {
     $app->get('/', \App\Action\HomeAction::class);
 <<<<<<< HEAD
     $app->get('/users', \App\Action\UsersAction::class);
+<<<<<<< HEAD
     $app->get('/user/{id}/{}token', \App\Action\UserAction::class);
 =======
 
@@ -40,4 +41,12 @@ return function (App $app) {
 
     $app->get('/dashboard/{name}', \App\Action\DashboardAction::class);
 
+=======
+    $app->post('/posts', \App\Action\PostsAction::class);
+    $app->get('/user/{id}/{token}', \App\Action\UserAction::class);
+    $app->get('/template', \App\Action\HomeActionTWIG::class);
+    $app->get('/update', \App\Action\UserUpEmailAction::class);
+    $app->get('/delete/{id}', \App\Action\UserDeleteAction::class);
+    $app->get('/Dashboard/{name}', \App\Action\DashboardAction::class);
+>>>>>>> origin/olfa
 };

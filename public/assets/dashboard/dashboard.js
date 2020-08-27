@@ -104,7 +104,11 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./temp
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 eval("__webpack_require__(/*! ./dashboard.css */ \"./templates/dashboard/dashboard.css\");\n\nconsole.log('hello from the dashboard');\n\n//# sourceURL=webpack:///./templates/dashboard/dashboard.js?");
+=======
+eval("__webpack_require__(/*! ./dashboard.css */ \"./templates/dashboard/dashboard.css\");\nconsole.log('hello from the dashbord');\n\n//# sourceURL=webpack:///./templates/dashboard/dashboard.js?");
+>>>>>>> origin/olfa
 
 /***/ })
 
