@@ -1,6 +1,9 @@
 {
+  "Register/Register.css": "Register/Register.css",
+  "Register/Register.js": "Register/Register.js",
   "dashboard/dashboard.css": "dashboard/dashboard.css",
   "dashboard/dashboard.js": "dashboard/dashboard.js",
   "home/home-index.css": "home/home-index.css",
-  "home/home-index.js": "home/home-index.js"
+  "home/home-index.js": "home/home-index.js",
+  "layout/layout.js": "layout/layout.js"
 }
