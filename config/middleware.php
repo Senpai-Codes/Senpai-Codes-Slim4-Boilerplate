@@ -27,6 +27,9 @@ return function (App $app) {
     // Catch exceptions and errors
     $app->add(ErrorHandlerMiddleware::class); 
 
+    $loggerFactory = $app->getContainer()->get(\App\Factory\LoggerFactory::class);
+    $logger = $loggerFactory->addFileHandler('error.log')->createInstance('error');
+
     $app->addErrorMiddleware(true, true, true, $logger);
 
 };

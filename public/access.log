@@ -1,0 +1,5 @@
+127.0.0.1 - - [25/Aug/2020:12:01:52 +0100] "GET / HTTP/1.1" 402 287 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+127.0.0.1 - - [25/Aug/2020:12:02:14 +0100] "GET /users HTTP/1.1" 500 5420 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+127.0.0.1 - - [25/Aug/2020:12:02:39 +0100] "GET /users HTTP/1.1" 500 5420 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+127.0.0.1 - - [25/Aug/2020:12:05:15 +0100] "GET /users HTTP/1.1" 200 274 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+127.0.0.1 - - [25/Aug/2020:14:50:29 +0100] "POST /user-update HTTP/1.1" 200 228 "-" "PostmanRuntime/7.26.3"

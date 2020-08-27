@@ -1,6 +1,6 @@
 <?php
 
-namespace App\QueryFactory;
+namespace App\Repository;
 
 use Cake\Database\Connection;
 use Cake\Database\Query;
@@ -35,7 +35,6 @@ final class QueryFactory
     {
         return $this->connection->newQuery();
     }
-
 
     /**
      * Create a new 'select' query for the given table.
