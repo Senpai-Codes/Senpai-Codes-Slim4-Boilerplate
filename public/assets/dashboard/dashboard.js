@@ -86,29 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./templates/dashboard/dashboard.css":
-/*!*******************************************!*\
-  !*** ./templates/dashboard/dashboard.css ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./templates/dashboard/dashboard.css?");
-
-/***/ }),
-
 /***/ "./templates/dashboard/dashboard.js":
 /*!******************************************!*\
   !*** ./templates/dashboard/dashboard.js ***!
   \******************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-<<<<<<< HEAD
-eval("__webpack_require__(/*! ./dashboard.css */ \"./templates/dashboard/dashboard.css\");\n\nconsole.log('hello from the dashboard');\n\n//# sourceURL=webpack:///./templates/dashboard/dashboard.js?");
-=======
-eval("__webpack_require__(/*! ./dashboard.css */ \"./templates/dashboard/dashboard.css\");\nconsole.log('hello from the dashbord');\n\n//# sourceURL=webpack:///./templates/dashboard/dashboard.js?");
->>>>>>> origin/olfa
+eval("throw new Error(\"Module parse failed: Unexpected token (2:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| require('./dashboard.css');\\n> <<<<<<< HEAD\\n| \\n| console.log('hello from the dashboard');\");\n\n//# sourceURL=webpack:///./templates/dashboard/dashboard.js?");
 
 /***/ })
 
