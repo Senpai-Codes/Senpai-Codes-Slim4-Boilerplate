@@ -8,7 +8,6 @@ $(document).ready(function() {
         var lastname=$("#lastname").val();
         var email=$("#email").val();
         var password=$("#psw").val();
-        var Rpassword=$("#psw-repeat").val();
         console.log('send');
 
         var settings = {
@@ -24,7 +23,7 @@ $(document).ready(function() {
           };
           
           $.ajax(settings).done(function (response) {
-            console.log(response);
+            console.log(typeof(response));
             if (response.success == 1) {
                 $("input").val('');
                 Swal.fire(

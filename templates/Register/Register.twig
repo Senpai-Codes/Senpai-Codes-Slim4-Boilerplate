@@ -1,45 +1,55 @@
 {% extends "layout/layout.twig" %}
 
 {% block css %}
-    {% webpack_entry_css 'Register/Register' %}
+{% webpack_entry_css 'Register/Register' %}
 {% endblock %}
 
 {% block js %}
-    {% webpack_entry_js 'Register/Register' %}
+{% webpack_entry_js 'Register/Register' %}
 {% endblock %}
 
 {% block content %}
 
-
-<div>
-  <div class="container">
-    <h1>Register</h1>
-    <p>Please fill in this form to create an account.</p>
+<div class="container d-flex justify-content-center align-itmes-center main">
+  <div class="card col-md-6 px-3 py-3 main-content">
+    <div class="d-flex align-itmes-center justify-content-center">
+      <h1 class="h3 mb-3 text-bold text-uppercase front-weight-bold">Register</h1>
+    </div>
+   <br>
+    <div class="d-flex align-itmes-center justify-content-left">
+      <p class="p mb-3 text-bold front-weight-bold">Please fill in this form to create an account.</p>
+    </div>
     <hr>
-
-    <label for="email"><b>first name</b></label>
-    <input type="text" placeholder="first name"  id="firstname" required>
-
-
-    <label for="email"><b>last name</b></label>
-    <input type="text" placeholder="last name"  id="lastname" required>
-
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-    <hr>
-
-    <button id="target" class="registerbtn">Register</button>
-  </div>
-  
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="email"><b>First Name</b></label>
+       <input type="text" placeholder="first name"  id="firstname" required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="email"><b>Last Name</b></label>
+        <input type="text" placeholder="last name"  id="lastname" required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="psw"><b>Password</b></label>
+         <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-itmes-center mt-4">
+      <button id="target" class="registerbtn">Register</button>
+    </div>
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
   </div>
 </div>
 

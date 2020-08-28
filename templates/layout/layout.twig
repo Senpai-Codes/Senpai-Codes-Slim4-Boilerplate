@@ -19,7 +19,11 @@
         <meta name="msapplication-TileImage" content="/static/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <title>Clock Senpai</title>
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="templates/Register/Register.css">
         {% block css %}{% endblock %}
+        {% webpack_entry_css 'layout/layout' %}
         {% webpack_entry_js 'layout/layout' %}
     </head>
     <body>

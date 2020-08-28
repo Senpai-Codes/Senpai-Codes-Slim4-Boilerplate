@@ -1,0 +1,11 @@
+$sudo nano config.inc.php
+
+
+//we use this cammandeto execute the update of the server configuration 
+$sudo systemctl reload apache2.service
+//to activate the server 
+$php -S localhost:8888 -t public/
+//uses the built-in alert-function,
+$npm install sweetalert2
+
+//build javascript
